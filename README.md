@@ -27,13 +27,13 @@ Password: Enter the password created when launching the Redshift cluster.
 Port: Enter 5439.
 
 ## Data Source 
-* Log data: `s3://udacity-dend/log_data`
-* Song data: `s3://udacity-dend/song_data`
+* Log data: `s3://spakify/log_data`
+* Song data: `s3://spakify/song_data`
 
 ## Project Strucute
 * README: Current file, holds instructions and documentation of the project
-* dags/sparkify_dend_dag.py: Directed Acyclic Graph definition with imports, tasks and task dependencies
-* dags/sparkify_dend_dimensions_subdag.py: SubDag containing loading of Dimensional tables tasks
+* dags/sparkify_dag.py: Directed Acyclic Graph definition with imports, tasks and task dependencies
+* dags/sparkify_dimensions_subdag.py: SubDag containing loading of Dimensional tables tasks
 * imgs/dag.png: DAG visualization
 * plugins/helpers/sql_queries.py: Contains Insert SQL statements
 * plugins/operators/create_tables.sql: Contains SQL Table creations statements
